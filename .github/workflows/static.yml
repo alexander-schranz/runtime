@@ -87,7 +87,7 @@ jobs:
           composer-options: "--ignore-platform-reqs" # required for PHP 8.2 as not yet official supported
 
       - name: Install psalm
-        run: composer global require vimeo/psalm:5.0.0-beta1
+        run: composer global require vimeo/psalm:5.0.0-beta1 --ignore-platform-reqs
 
       - name: Psalm
         run: psalm --no-progress --output-format=github
